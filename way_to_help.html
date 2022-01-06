@@ -13,17 +13,18 @@
             *{
                 margin: 0;
             }
-            header{
+            #way-header{
                 text-align: left;
             }
-            h1{
+            #way-h1{
                 margin-bottom: 0px;
             }
-            h2{
+            #way-h2{
+                font-size: 30px;
                 text-align: center;
                 margin: 20px auto;
             }
-            h4{
+            #way-h4{
                 text-align:left;
                 margin: 0 auto;
             }
@@ -42,7 +43,6 @@
             .donation{
                 display:flex; 
                 flex-direction: column;
-
             }
             .donations{
                 display: grid;
@@ -65,6 +65,9 @@
                 color: white;
                 font-size: 15px;
             }
+            .donate-btn:hover{
+                background-color: #2f464c;
+            }
             .desc{
                 margin-top: auto;
                 text-align: center;
@@ -80,9 +83,10 @@
             /* #354b51 
             #314951
             #153945
+            #314951
             */
             .nav{ 
-                background-color: #314951;
+                background-color: #2f464c;
                 opacity: 0.95;
                 display:flex; 
                 justify-content: right;
@@ -127,6 +131,12 @@
                 border-radius: 5px;
                 border: none;
             }
+            .price-btn:hover{
+                cursor: pointer;
+            }
+            .price-btn:focus {     
+                background-color:#04c88f;    
+            }
             .payments{
                 margin: 10px auto;
                 display: flex;
@@ -137,37 +147,64 @@
                 display: flex;
                 justify-content: center;
                 gap: 10px;
-                border: 1px solid #04c88f;
+                border: none;
                 margin: 20px auto;
-                padding: 1px 50px;
+                padding: 2px 50px;
                 margin-bottom: 10px;
                 width: 150px;
                 border-radius: 10px;
                 background-color:white;
+                border: dotted #2f464c 1px;
                 margin-top: 10px;
             }
+            /* #ffc43b 
+                #0059d2
+                #038cff
+            */
+            .payment-btn:hover{
+                cursor: pointer;
+            }
             .payment-img{
-                width: 35px;
-                height: 35px;
+                width: 30px;
+                height: 30px;
             }
             .footer{
                 margin-top: 20px;
             }
+            a{
+                text-decoration: none;
+            }
+            .home-links:link, .home-links:visited {
+                color: white;
+            }
+            .home-links:hover {
+                color: #00c98e;
+            }
+            .links:link, .links:visited{
+                background-color: #4b7b86;
+                border: #d0d8dd 1px solid;
+                padding: 0 2px;
+                border-radius: 15px ;
+                font-size: 20px;
+                font-weight: bolder;
+                color: white;
+            }
+
         </style>
     </head>
  
     <body>
-        <header>
-            <h1 class=>Ways to Get Involve</h1>
+        <header id="way-header">
+            <h1 id="way-h1">Ways to Get Involve</h1>
             <!-- need to link to the page -->
             <div class="nav">
-                <p class="back-btn">Home</p>
-                <p class="back-btn">About Us</p>
+                <p class="back-btn"><a class="home-links" href="./index.html">Home</a></p>
+                <p class="back-btn"><a class="home-links" href="./impact.html">About Us</a></p>
             </div>
         </header>
 
         <main>
-            <h2>You Can Change the Future of Education</h2>
+            <h2 id="way-h2">You Can Change the Future of Education</h2>
             <div class="donation">
                 <div class="donation">
                     <img class="icon" src="./images/money.png" alt="money-icon">
@@ -182,7 +219,7 @@
                     <button class="price-btn">$500</button>
                     <button class="price-btn">$<input type="text" style="width: 100px; padding: 5px;"></button>
                 </div>
-                <h4>Choose a payment method</h4>
+                <h4 id="way-h4">Choose a payment method</h4>
                 <div class="payments">
                     <div class="payment-btn">
                         <img class="payment-img" src="./images/payment_methods/discover.png" alt="Discover">
@@ -190,14 +227,13 @@
                         <img class="payment-img" src="./images/payment_methods/visacard.png" alt="Visa">
                         <img class="payment-img" src="./images/payment_methods/mastercard.png" alt="Master">
                     </div>
-                    
                     <div class="payment-btn">
                         <img class="payment-img" src="./images/payment_methods/paypal.png" alt="Paypal">
                     </div>
                      
                 </div> <!-- end of payments -->
                 <button class="donate-btn">DONATE</button>
-                <p class="desc">Or donate directly to <a className="links" target="_blank" href="https://secure.actblue.com/donate/codepathorg?refcode=website">CoursePath</a></p>
+                <p class="desc">Or donate <a class="links" target="_blank" href="https://secure.actblue.com/donate/codepathorg?refcode=website">Here</a></p>
             </div> <!-- end of donation-->
             <div class="ways">
                 <div class="other-way-help">
@@ -205,21 +241,21 @@
                         <img class="icon" src="./images/volunteer.png" alt="volunteer">
                         <h3 class="subtitle">Volunteer</h3>
                     </div>
-                        <p class="way-desc">Click <a className="links" target="_blank" href="https://codepath.org/volunteer">Here</a> to learn more about how to volunteer in the program.</p>
+                        <p class="way-desc">Click <a class="links" target="_blank" href="https://codepath.org/volunteer">Here</a> to learn more about how to volunteer in the program.</p>
                 </div>
                 <div class="other-way-help">
                     <div>
                         <img class="icon" src="./images/team.png" alt="team">
                         <h3 class="subtitle">Join the team</h3>
                     </div>
-                    <p class="way-desc">Click <a className="links" target="_blank" href="https://jobs.codepath.org/">Here</a> to view job openings</p>
+                    <p class="way-desc">Click <a class="links" target="_blank" href="https://jobs.codepath.org/">Here</a> to view job openings</p>
                 </div>
                 <div class="other-way-help">
                     <div>
                         <img class="icon" src="./images/sponsor-icon.png" alt="sponsor">
                         <h3 class="subtitle">Partnership</h3>
                     </div>
-                    <p class="way-desc">Click <a className="links" target="_blank" href="https://codepath.org/partners">Here</a> to help the program with new opportunities for those who need it</p>
+                    <p class="way-desc">Click <a class="links" target="_blank" href="https://codepath.org/partners">Here</a> to help the program with new opportunities for those who need it</p>
                 </div> 
 
             </div>
