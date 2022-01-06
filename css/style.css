@@ -367,11 +367,14 @@ textarea{
     margin: auto;
     margin-bottom: 50px;
 }
- .ramon_h3{
+.ramon_h3{
          font-size:26px;
          text-align:right
 }
 .ramon_p{
         font-size:30px;
         margin-bottom:50px;
+}
+.ramon_footer{
+        font-size:14px;
 }
