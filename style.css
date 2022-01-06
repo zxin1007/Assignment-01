@@ -33,7 +33,6 @@ main{
 
      background-color: #2f464c;
      height: 1150px;
-     #00c98e;
 }
 
 #image{
@@ -71,12 +70,9 @@ padding:2%;
 
 #peng_footer{
 
-position:absolute;
-bottom: 0;
 text-align: center;
+margin: 50px;
 
-margin: px 50px;
-text-align: center;
 
 }
 
