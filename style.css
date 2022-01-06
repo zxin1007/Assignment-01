@@ -263,20 +263,20 @@ color:white;
                 font-weight: bolder;
                 color: white;
             }
-        #ramon_body{background-color:#2f464c;color:white;text-align: center;}
+        .ramon_body{background-color:#2f464c;color:white;text-align: center;}
 
-        #ramon_a{margin:2%;font-weight:bold;font-size:30px;text-decoration:none;color:white;
+        .ramon_a{margin:2%;font-weight:bold;font-size:30px;text-decoration:none;color:white;
           padding:1%;background-color:#2f464c;border-radius: 15px;}
         
-        #ramon_a:visited{color: white;}
-        #ramon_a:hover{color:#00c98e}
+        .ramon_a:visited{color: white;}
+        .ramon_a:hover{color:#00c98e}
         
-        #ramon_nav{border-radius:20px;font-size: 20px;display:flex;background-color:#44666e
+        .ramon_nav{border-radius:20px;font-size: 20px;display:flex;background-color:#44666e
         ;justify-content:space-between;max-width: 40%;margin:auto;margin-bottom:2%}
         
         #ul_ramon{max-width:50%;margin-left:25%;list-style-position: inside;background-color:#3c5a61;border-radius: 40px;padding:1% 0%}
-        #ramonli{margin: 5% 0%;font-size:26px;max-width:70%;margin-left:15%;list-style: none;}
-        #ramonli::before {content: "✱ "; color: #00c98e}
+        .ramon_li{margin: 5% 0%;font-size:26px;max-width:70%;margin-left:15%;list-style: none;}
+        .ramon_li::before {content: "✱ "; color: #00c98e}
         
         .top{padding-bottom:3%;}
         
@@ -286,8 +286,8 @@ color:white;
         
         .testimonials{display:flex;justify-content: center;}
         
-        #testimonialtext{font-size:22px;font-style:italic;}
-        #ramon_h1{padding:1.5%;border-radius:30px;font-size:60px;background-color:#00c98e;color:white;max-width: 30%;margin:auto;margin-bottom:3%}
-        #ramon_h2{padding:0.25%;border-radius:30px;font-size:45px;background-color:#00c98e;color:white;max-width: 30%;margin:auto;margin-bottom:3%}
-        #ramon_h3{font-size:26px;text-align:right}
-        #ramon_p{font-size:30px}
+        .testimonialtext{font-size:22px;font-style:italic;}
+        .ramon_h1{padding:1.5%;border-radius:30px;font-size:60px;background-color:#00c98e;color:white;max-width: 30%;margin:auto;margin-bottom:3%}
+        .ramon_h2{padding:0.25%;border-radius:30px;font-size:45px;background-color:#00c98e;color:white;max-width: 30%;margin:auto;margin-bottom:3%}
+        .ramon_h3{font-size:26px;text-align:right}
+        .ramon_p{font-size:30px}
