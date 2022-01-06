@@ -273,12 +273,13 @@ textarea{
 }
 
 .ramon_a{
-    margin:2%;
+    margin:14px;
     font-weight:bold;
     font-size:30px;
     text-decoration:none;color:white;
-    padding:1%;background-color:#2f464c;
+    padding:12px;background-color:#2f464c;
     border-radius: 15px;
+    width: 250px;
 }
         
 .ramon_a:visited{
@@ -287,29 +288,33 @@ textarea{
 .ramon_a:hover{
     color:#00c98e
 }
-        
-.ramon_nav{
-    border-radius:20px;
-    font-size: 20px;display:flex;
-    background-color:#44666e;
-    justify-content:space-between;
-    max-width: 40%;margin:auto;
-    margin-bottom:2%
+
+.ramon_nav {
+    border-radius: 20px;
+    font-size: 20px;
+    display: flex;
+    background-color: #44666e;
+    justify-content: space-between;
+    width:800px;
+    margin: auto;
+    margin-bottom: 40px;
 }
         
 #ul_ramon{
-    max-width:50%;
-    margin-left:25%;
+    width: 800px;
+    margin:auto;
     list-style-position: inside;
     background-color:#3c5a61;
     border-radius: 40px;
-    padding:1% 0%
+    padding:15px 0px;
 }
-.ramon_li{
-    margin: 5% 0%;
-    font-size:26px;
-    max-width:70%;
-    margin-left:15%;
+.ramon_li {
+
+    font-size: 26px;
+    width: 550px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
     list-style: none;
 }
 .ramon_li::before {
@@ -318,41 +323,49 @@ textarea{
 }
         
 .top{
-    padding-bottom:3%;
+    padding-bottom:90px;
 }
         
 .bottom{
-    margin-bottom:5%;
+    margin-bottom:90px;
 }
-        
-.testimonial{
-    padding:1% 2%;
+
+.testimonial {
+    padding: 15px 30px;
     text-align: center;
-    min-width: 20%;
-    margin:0% 5%;
+    width: 300px;
+    margin: 0px 100px;
     background-color: #44666e;
     border-radius: 30px;
 }
-        
+.testimonialtext {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 40px;
+}
 .testimonials{
     display:flex;
     justify-content: center;
 }
-.ramon_h1{
-        padding:1.5%;
-        border-radius:30px;
-        font-size:60px;
-        background-color:#00c98e;
-        color:white;max-width: 30%;
-        margin:auto;margin-bottom:3%
+.ramon_h1 {
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 60px;
+    background-color: #00c98e;
+    color: white;
+    width:500px;
+    margin: auto;
+    margin-bottom: 50px;
 }
- .ramon_h2{
-         padding:0.25%;
-         border-radius:30px;
-         font-size:45px;
-         background-color:#00c98e;
-         color:white;max-width: 30%;
-         margin:auto;margin-bottom:3%
+.ramon_h2 {
+    padding: 8px;
+    border-radius: 30px;
+    font-size: 45px;
+    background-color: #00c98e;
+    color: white;
+    width:550px;
+    margin: auto;
+    margin-bottom: 50px;
 }
  .ramon_h3{
          font-size:26px;
@@ -360,5 +373,5 @@ textarea{
 }
 .ramon_p{
         font-size:30px;
-        margin-bottom:2%
+        margin-bottom:50px;
 }
