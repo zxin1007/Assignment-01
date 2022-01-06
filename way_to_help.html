@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
+    <!-- 
+        nav #314951
+        pirce-button #d0d8dd
+        donate/submit #04c88f
+        section #e9eef1
+     -->
 
     <head>
         <title></title>
         <style>
+            *{
+                margin: 0;
+            }
             header{
                 text-align: left;
             }
@@ -14,10 +23,15 @@
                 text-align: center;
                 margin: 20px auto;
             }
+            h4{
+                text-align:left;
+                margin: 0 auto;
+            }
             .subtitle{
                 text-align: center; 
                 margin-top: 0;
                 margin-bottom: 0;
+                font-size: 25px;
             }
             .icon{
                 width: 50px; 
@@ -28,24 +42,28 @@
             .donation{
                 display:flex; 
                 flex-direction: column;
+
             }
             .donations{
                 display: grid;
                 grid-template: 40px 40px/ 150px 150px 150px;
                 gap: 10px;
-                margin: 0 auto;
-                margin-top: 10px;
+                margin: 10px auto;
+                margin-bottom: 15px;
             }
             .donate-btn{
                 margin-top: 0;
                 margin-bottom: 20px;
                 width: 150px;
-                padding: 10px;
+                padding: 15px;
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                border: 1px solid gray;
+                border: none;
                 border-radius: 5px;
+                background-color: #04c88f ;
+                color: white;
+                font-size: 15px;
             }
             .desc{
                 margin-top: auto;
@@ -56,11 +74,19 @@
                 margin-right: 15px;
                 text-align: right; 
                 padding: 10px;
+                font-size: 20px;
             }
-            .nav{
+
+            /* #354b51 
+            #314951
+            #153945
+            */
+            .nav{ 
+                background-color: #314951;
+                opacity: 0.95;
                 display:flex; 
                 justify-content: right;
-                margin-top: 0px;
+                margin-top: 10px;
             }
             textarea{
                 display: block;
@@ -73,12 +99,16 @@
                 margin-top: 0px;
                 margin-bottom: 0;
             }
+            /* #b0b2b6 */
             .ways{
+                color:black;
+                background-color: #e9eef1;
+                opacity: 0.95;
                 margin: 50px auto;
                 padding: 50px;
                 display: flex;
                 justify-content: center;
-                margin-bottom: 0;
+                margin-bottom: 30px;
             }
             .other-way-help{
                 display: relative;
@@ -86,30 +116,35 @@
                 height: 150px;
             }
             .way-desc{
+                font-size: 18px;
                 margin:10px auto;
                 text-align: center;
                 width: 300px;
             }
-            .price-btns{
-                background-color: white;
-                border: 1px solid black;
+            /* #e9eef1 */
+            .price-btn{
+                background-color: #d0d8dd;
                 border-radius: 5px;
+                border: none;
             }
             .payments{
                 margin: 10px auto;
                 display: flex;
                 gap: 50px;
+                margin-top: 0;
             }
             .payment-btn{
                 display: flex;
                 justify-content: center;
                 gap: 10px;
-                border: 1px solid black;
+                border: 1px solid #04c88f;
                 margin: 20px auto;
                 padding: 1px 50px;
                 margin-bottom: 10px;
                 width: 150px;
                 border-radius: 10px;
+                background-color:white;
+                margin-top: 10px;
             }
             .payment-img{
                 width: 35px;
@@ -139,7 +174,6 @@
                     <h3 class="subtitle">Make a Donation</h3>
                     <p class="desc">Your contribution will benefit CodePath.org.</p>
                 </div>
-                <h4>Choose payment method: </h4>
                 <div class="donations">
                     <button class="price-btn">$50</button>
                     <button class="price-btn">$100</button>
@@ -148,6 +182,7 @@
                     <button class="price-btn">$500</button>
                     <button class="price-btn">$<input type="text" style="width: 100px; padding: 5px;"></button>
                 </div>
+                <h4>Choose a payment method</h4>
                 <div class="payments">
                     <div class="payment-btn">
                         <img class="payment-img" src="./images/payment_methods/discover.png" alt="Discover">
@@ -160,31 +195,31 @@
                         <img class="payment-img" src="./images/payment_methods/paypal.png" alt="Paypal">
                     </div>
                      
-                </div>
-                <button class="donate-btn">Donate</button>
-                <p class="desc">Or donate directly to <a target="_blank" href="https://secure.actblue.com/donate/codepathorg?refcode=website">CoursePath</a></p>
+                </div> <!-- end of payments -->
+                <button class="donate-btn">DONATE</button>
+                <p class="desc">Or donate directly to <a className="links" target="_blank" href="https://secure.actblue.com/donate/codepathorg?refcode=website">CoursePath</a></p>
             </div> <!-- end of donation-->
             <div class="ways">
                 <div class="other-way-help">
                     <div>
                         <img class="icon" src="./images/volunteer.png" alt="volunteer">
-                        <h3 class="subtitle">Volunteer in the Program</h3>
+                        <h3 class="subtitle">Volunteer</h3>
                     </div>
-                        <p class="way-desc">Click <a target="_blank" href="https://codepath.org/volunteer">Here</a> to learn more about how to volunteer in the program.</p>
+                        <p class="way-desc">Click <a className="links" target="_blank" href="https://codepath.org/volunteer">Here</a> to learn more about how to volunteer in the program.</p>
                 </div>
                 <div class="other-way-help">
                     <div>
                         <img class="icon" src="./images/team.png" alt="team">
-                        <h3 class="subtitle">Volunteer in the Program</h3>
+                        <h3 class="subtitle">Join the team</h3>
                     </div>
-                    <p class="way-desc">Click <a target="_blank" href="https://jobs.codepath.org/">Here</a> to view job openings</p>
+                    <p class="way-desc">Click <a className="links" target="_blank" href="https://jobs.codepath.org/">Here</a> to view job openings</p>
                 </div>
                 <div class="other-way-help">
                     <div>
                         <img class="icon" src="./images/sponsor-icon.png" alt="sponsor">
                         <h3 class="subtitle">Partnership</h3>
                     </div>
-                    <p class="way-desc">Click <a target="_blank" href="https://codepath.org/partners">Here</a> to help the program with new opportunities for those who need it</p>
+                    <p class="way-desc">Click <a className="links" target="_blank" href="https://codepath.org/partners">Here</a> to help the program with new opportunities for those who need it</p>
                 </div> 
 
             </div>
