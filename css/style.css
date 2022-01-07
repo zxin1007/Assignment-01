@@ -78,15 +78,21 @@ main{
 }
 
 #way-header{
-    text-align: left;
+    color: whi;
+    font-size: 30px;
+    text-align: center;
+    background-color: #2f464c;
 }
 #way-h1{
+    color: white;
     margin-bottom: 0px;
 }
 #way-h2{
     font-size: 30px;
     text-align: center;
     margin: 20px auto;
+    margin-top: 0;
+    padding-top: 20px;
 }
 #way-h4{
     text-align:left;
@@ -172,7 +178,7 @@ textarea{
             /* #b0b2b6 */
 .ways{
     color:black;
-    background-color: #e9eef1;
+    background-color: #00c98e;
     opacity: 0.95;
     margin: 50px auto;
     padding: 50px;
@@ -221,7 +227,7 @@ textarea{
     width: 150px;
     border-radius: 10px;
     background-color:white;
-    border: dotted #2f464c 1px;
+    border: dotted #00c98e 1px;
     margin-top: 10px;
 }
             /* #ffc43b 
@@ -258,10 +264,9 @@ textarea{
     color: white;
 }
 .way-main{
-    background-color: white;
-    color: black;
+    background-color: #2f464c ;
+    color: white;
     text-align: center;
-    height: auto;
 }
 .ramon_body{
     background-color:#2f464c;
