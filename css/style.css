@@ -155,14 +155,6 @@ main{
             #153945
             #314951
             */
-.nav{ 
-    background-color: #2f464c;
-    opacity: 0.95;
-    display:flex; 
-    justify-content: right;
-    margin-top: 10px;
-    padding-bottom:30px;
-}
 textarea{
     display: block;
     resize: none;
