@@ -1,3 +1,6 @@
+*{
+    margin: 0;
+}
 .columns{
         display: flex;
         justify-content: center;
@@ -30,7 +33,6 @@
 
 
 main{
-
      background-color: #2f464c;
      height: 1150px;
 }
@@ -56,34 +58,23 @@ main{
 }
 
 .myp{
- 
  font-size: 25px;
  margin: 5%;
  background-color: #00c98e;
  border-radius: 20px;
-padding:2%;
-
-
+ padding:2%;
 }
 
 
 
 #peng_footer{
 
-text-align: center;
-margin: 50px;
+    text-align: center;
+    margin: 10px;
 
 
 }
 
-main{
-
-color:white;
-
-}
-*{
-    margin: 0;
-}
 #way-header{
     text-align: left;
 }
@@ -240,9 +231,10 @@ textarea{
  .payment-img{
     width: 30px;
     height: 30px;
-}            
+}          
 .footer{
     margin-top: 0px;
+    text-align: center;
 }
 .home-links, .links{
     text-decoration: none;
@@ -265,6 +257,8 @@ textarea{
 .way-main{
     background-color: white;
     color: black;
+    text-align: center;
+    height: auto;
 }
 .ramon_body{
     background-color:#2f464c;
@@ -379,4 +373,5 @@ textarea{
 }
 .ramon_footer{
         margin-top:6px;
+        text-align: center;
 }
